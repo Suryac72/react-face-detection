@@ -1,15 +1,10 @@
 import React from 'react';
 
-class Navbar extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render(){
-        return(
-            <div>
-               <p>{this.props.expression}</p>
-            </div>
-        )
-    }
+function Navbar() {
+  return (
+    <h1>{localStorage.getItem('expressions')}</h1>
+    
+  )
 }
- export default Navbar;
+
+export default Navbar;
